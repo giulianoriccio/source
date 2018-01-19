@@ -13,7 +13,8 @@ class ZorroClass3 extends ZorroClass2
 
     private function privateZorroMethod3()
     {
-        $this->privateZorroMethod2();
+        self::privateStaticZorroMethod3();
+        static::privateStaticZorroMethod3();
     }
 
     public static function publicStaticZorroMethod3()
@@ -30,7 +31,5 @@ class ZorroClass3 extends ZorroClass2
 
     private static function privateStaticZorroMethod3()
     {
-        self::privateStaticZorroMethod2();
-        static::privateStaticZorroMethod2();
     }
 }

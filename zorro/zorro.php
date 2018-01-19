@@ -11,6 +11,8 @@ class ZorroClass
 
     private function privateZorroMethod()
     {
+        self::privateStaticZorroMethod();
+        static::privateStaticZorroMethod();
     }
 
     public static function publicStaticZorroMethod()

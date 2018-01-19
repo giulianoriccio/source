@@ -13,7 +13,8 @@ class TestClass2 extends TestClass
 
     private function privateTestMethod2()
     {
-        $this->privateTestMethod();
+        self::privateStaticTestMethod2();
+        static::privateStaticTestMethod2();
     }
 
     public static function publicStaticTestMethod2()
@@ -30,7 +31,5 @@ class TestClass2 extends TestClass
 
     private static function privateStaticTestMethod2()
     {
-        self::privateStaticTestMethod();
-        static::privateStaticTestMethod();
     }
 }

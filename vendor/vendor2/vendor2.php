@@ -13,7 +13,8 @@ class VendorClass2 extends VendorClass
 
     private function privateVendorMethod2()
     {
-        $this->privateVendorMethod();
+        self::privateStaticVendorMethod2();
+        static::privateStaticVendorMethod2();
     }
 
     public static function publicStaticVendorMethod2()
@@ -30,7 +31,5 @@ class VendorClass2 extends VendorClass
 
     private static function privateStaticVendorMethod2()
     {
-        self::privateStaticVendorMethod();
-        static::privateStaticVendorMethod();
     }
 }

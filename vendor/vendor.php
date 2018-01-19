@@ -11,6 +11,8 @@ class VendorClass
 
     private function privateVendorMethod()
     {
+        self::privateStaticVendorMethod();
+        static::privateStaticVendorMethod();
     }
 
     public static function publicStaticVendorMethod()
